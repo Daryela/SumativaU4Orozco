@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson - La Biografía del Rey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --white: #ffffff;
+            --black-glass: rgba(10, 10, 10, 0.85);
+            --border-glow: rgba(212, 175, 55, 0.3);
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Lora', serif;
+            /* Fondo solicitado con overlay oscuro para legibilidad */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                              url('https://mewmagazine.es/wp-content/uploads/2023/02/concierto.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Contenedores con efecto cristal y borde dorado */
+        .section-box {
+            width: 100%;
+            max-width: 850px;
+            background: var(--black-glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glow);
+            margin-bottom: 30px;
+            padding: 35px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            transition: 0.3s;
+        }
+
+        .section-box:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        /* Cabecera con rayos dorados */
+        .top-mini-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
+       
+        .header-emoji {
+            font-size: 2em;
+            color: var(--gold);
+            filter: drop-shadow(0 0 10px var(--gold));
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 1.8em;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        /* Sección Intro */
+        .intro-section {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+       
+        .intro-img-container {
+            flex: 1;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--gold);
+        }
+
+        .intro-text { flex: 1.5; }
+       
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gold);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Imagen Grande Central */
+        .big-image-container {
+            height: 450px;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid var(--gold);
+        }
+
+        /* Biografía con imagen flotante */
+        .biography-content {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .bio-side-img {
+            float: right;
+            width: 300px;
+            height: 220px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+            margin-left: 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Botón de volver mejorado */
+        .btn-footer {
+            background: transparent;
+            color: var(--gold);
+            padding: 15px 60px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin: 20px 0 50px 0;
+            border: 2px solid var(--gold);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn-footer:hover {
+            background: var(--gold);
+            color: black;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+        }
+
+        p { color: #e0e0e0; margin-bottom: 20px; }
+
+        /* Mobile adaptivity */
+        @media (max-width: 768px) {
+            .intro-section { flex-direction: column; text-align: center; }
+            .bio-side-img { float: none; width: 100%; margin: 0 0 20px 0; }
+            .big-image-container { height: 250px; }
+            h1 { font-size: 1.2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section-box top-mini-header">
+        <span class="header-emoji">⚡</span>
+        <div>
+            <h1>MICHAEL JACKSON: BIOGRAFIA</h1>
+        </div>
+        <span class="header-emoji">⚡</span>
+    </div>
+
+    <div class="section-box intro-section">
+        <div class="intro-img-container">
+            <img src="https://media.newyorker.com/photos/5b86ded37b50300447d167eb/master/w_1600,c_limit/StFelix-Michael-Jackson.jpg" alt="Michael Jackson Young">
+        </div>
+        <div class="intro-text">
+            <h3>EL COMIENZO DE TODO</h3>
+            <p>Michael Jackson es uno de los artistas más influyentes y reconocidos del mundo, y su trayectoria demuestra por qué su nombre es tan importante en la historia de la música.</p>
+        </div>
+    </div>
+
+    <div class="section-box big-image-container">
+        <img src="https://cdn.themedizine.com/2024/01/michael-jackson-biopic-the-medizine.jpg" alt="The King of Pop Live">
+    </div>
+
+    <div class="section-box biography-content">
+        <div class="bio-side-img">
+            <img src="https://universal1029.mx/wp-content/uploads/2024/08/efemerides-2024-08-28T110213.911-1100x733.jpg" alt="Iconic Move">
+        </div>
+        <p>Nació el 29 de agosto de 1958 en Gary, Indiana, dentro de una familia numerosa donde la música siempre estuvo presente. Desde muy pequeño mostró un talento natural para cantar y bailar, lo que llevó a que se uniera al grupo familiar <strong>The Jackson 5</strong>, donde se convirtió en la voz principal.</p>
+       
+        <p>A medida que fue creciendo, Michael decidió iniciar su carrera como solista, un paso que cambiaría la música para siempre. Su estilo mezclaba pop, soul, funk y elementos totalmente nuevos para la época. Con el lanzamiento de su álbum <em>“Off the Wall”</em>, demostró su poder individual, pero su verdadero impacto mundial llegó con <strong>“Thriller”</strong>, el disco más vendido de todos los tiempos.</p>
+       
+        <p>Michael también es mundialmente conocido por su manera de bailar. Movimientos como el <strong>moonwalk</strong> hicieron que su estilo fuera único y reconocible, inspirando a miles de artistas. Sus videoclips fueron revolucionarios; él convirtió los videos musicales en pequeñas piezas cinematográficas llenas de arte.</p>
+       
+        <p>Además de su talento, Michael fue una persona profundamente comprometida con causas sociales. Ha liderado proyectos para ayudar a la niñez, la educación y el medio ambiente. Hoy, su legado continúa vivo a través de su capacidad para reinventarse y esa conexión eterna que mantiene con su público global.</p>
+    </div>
+
+    <a href="principall.html" class="btn-footer">← VOLVER AL INICIO</a>
+
+</body>
+</html>

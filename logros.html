@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson | Logros y Récords</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --white: #ffffff;
+            --glass: rgba(0, 0, 0, 0.85);
+            --border-glow: rgba(212, 175, 55, 0.4);
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Lora', serif;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                              url('https://www.sdpnoticias.com/resizer/v2/XL3R5OSAT5ADFCQ7WKXF2KX7XQ.jpg?focal=2844%2C2164&auth=272442f858385824199c173e1dee0fb75330440585912c8bf4411fcff7d22dbf&width=640&height=360');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .section-box {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border-glow);
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            transition: all 0.4s ease;
+        }
+
+        .section-box:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .header-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .header-text { flex: 1.5; }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 2.2rem;
+            margin: 0 0 20px 0;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+        }
+
+        .header-img {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid var(--gold);
+            height: 280px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .item-3-card {
+            background: var(--glass);
+            border: 1px solid var(--border-glow);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        .item-3-card:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-10px);
+        }
+
+        .img-placeholder-3 {
+            height: 160px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 1px solid var(--gold);
+        }
+
+        .item-3-card b {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .details-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .side-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 200px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255,255,255,0.05);
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid var(--border-glow);
+        }
+
+        .mini-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            overflow: hidden;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .img-placeholder-2 {
+            height: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--gold);
+            margin-bottom: 15px;
+        }
+
+        img { width: 100%; height: 100%; object-fit: cover; }
+        p { line-height: 1.7; font-size: 1rem; color: #f0f0f0; text-align: justify; }
+        h3 { font-family: 'Montserrat', sans-serif; color: var(--gold); }
+        
+        .btn-footer {
+            background: transparent;
+            color: var(--gold);
+            padding: 15px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            border: 2px solid var(--gold);
+            transition: 0.3s;
+            margin: 20px 0 50px 0;
+            display: inline-block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-footer:hover {
+            background: var(--gold);
+            color: black;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+        }
+
+        @media (max-width: 850px) {
+            .header-section, .grid-3, .details-section, .grid-2 {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="section-box header-section">
+            <div class="header-text">
+                <h1>LOGROS: EL REY</h1>
+                <p>Michael Jackson alcanzó hitos que ningún otro artista ha podido igualar. Ganador de múltiples premios Grammy y revolucionario de la industria.</p>
+            </div>
+            <div class="header-img">
+                <img src="https://media.newyorker.com/photos/5b86ded37b50300447d167eb/master/w_1600,c_limit/StFelix-Michael-Jackson.jpg" alt="MJ Glory">
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <div class="item-3-card">
+                <div class="img-placeholder-3"><img src="https://universal1029.mx/wp-content/uploads/2024/08/efemerides-2024-08-28T110213.911-1100x733.jpg" alt="Logro 1"></div>
+                <b>ÉXITO GLOBAL</b>
+                <p>Rompió fronteras convirtiéndose en el artista más famoso del planeta.</p>
+            </div>
+            <div class="item-3-card">
+                <div class="img-placeholder-3"><img src="https://upload.wikimedia.org/wikipedia/en/6/62/Bad_World_Tour_Poster.jpg" alt="Logro 2"></div>
+                <b>BAD TOUR</b>
+                <p>Una gira histórica que atrajo a 4.4 millones de personas.</p>
+            </div>
+            <div class="item-3-card">
+                <div class="img-placeholder-3"><img src="https://energy99.mx/wp-content/uploads/2024/08/MichaelJacksonEnergy99.jpg" alt="Logro 3"></div>
+                <b>PURA ELECTRICIDAD</b>
+                <p>Su presencia escénica transformó los conciertos en experiencias teatrales.</p>
+            </div>
+        </div>
+
+        <div class="section-box details-section">
+            <div class="main-info">
+                <h3>Influencia Generacional</h3>
+                <p>Michael Jackson es un artista que ha alcanzado logros increíbles a lo largo de su carrera, como ganar múltiples premios Grammy, lograr que Thriller se convierta en uno de los discos más vendidos del mundo, crear videoclips innovadores que cambiaron la industria y desarrollar pasos de baile como el moonwalk, que se volvieron un símbolo mundial. Su discografía incluye álbumes importantes como Off the Wall, Bad, Dangerous y HIStory, donde muestra su creatividad y evolución musical. Hoy, Michael es una figura que inspira a cantantes, bailarines y jóvenes artistas gracias a su talento, su estilo único y su capacidad para influir en nuevas generaciones con su música y su forma de ver el arte.</p>
+            </div>
+            <div class="side-list">
+                <div class="list-item">
+                    <div class="mini-img"><img src="https://cdn-images.dzcdn.net/images/cover/544862aa5be45bc82ad4ab1a14daf63a/500x500-000000-80-0-0.jpg" alt="Moonwalk"></div>
+                    <span style="font-weight: bold; color: var(--gold);">Moonwalk</span>
+                </div>
+                <div class="list-item">
+                    <div class="mini-img"><img src="https://cdn-images.dzcdn.net/images/cover/92a024220a9532489c75c9d994835697/1900x1900-000000-80-0-0.jpg" alt="Grammy"></div>
+                    <span style="font-weight: bold; color: var(--gold);">Thriller</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="section-box" style="text-align: center;">
+                <div class="img-placeholder-2"><img src="https://s3.abcstatics.com/abc/www/multimedia/gente/2024/07/17/michael-jackson-RI5RluhYxTB9NW9xFPWN3sI-1200x840@diario_abc.jpg" alt="Legado"></div>
+                <b style="color: var(--gold); letter-spacing: 2px; font-family: 'Montserrat';">REY DEL POP</b>
+            </div>
+            <div class="section-box" style="text-align: center;">
+                <div class="img-placeholder-2"><img src="https://www.lavanguardia.com/files/image_990_484/uploads/2018/06/22/5fa439b4041e5.jpeg" alt="Símbolo"></div>
+                <b style="color: var(--gold); letter-spacing: 2px; font-family: 'Montserrat';">SÍMBOLO MUNDIAL</b>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="principall.html" class="btn-footer">← VOLVER AL INICIO</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
